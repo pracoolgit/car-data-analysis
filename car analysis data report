@@ -1,0 +1,110 @@
+Project Overview
+
+The Car Sales Analysis Project focuses on analyzing sales data of various car models to identify patterns, performance metrics, and customer preferences.
+Using Power BI, the dashboard helps visualize and interpret sales performance across brands, regions, and time periods — supporting better strategic and marketing decisions.
+
+This analysis helps stakeholders understand:
+
+Which car models and brands perform best
+
+How pricing, region, and car segment impact sales
+
+When demand peaks and which categories drive revenue
+
+🎯 Objectives
+
+To analyze total sales, profit, and quantity sold across brands and models.
+
+To identify top-performing models and underperforming categories.
+
+To study regional and seasonal trends in car sales.
+
+To evaluate customer demand by segment (SUV, Sedan, Hatchback, Electric, etc.).
+
+To provide actionable insights for inventory, marketing, and pricing strategies.
+
+📊 Key Performance Indicators (KPIs)
+KPI	Description
+Total Sales	Total revenue generated from all car models
+Total Units Sold	Number of vehicles sold
+Average Selling Price (ASP)	Revenue divided by total units sold
+Profit Margin (%)	Profit as a percentage of revenue
+Top Brand	Brand with the highest total sales
+Top Model	Highest-selling car model
+Sales by Segment	Comparison of sales across SUV, Sedan, Hatchback, EV
+Sales by Region	Regional distribution of car sales
+🧠 Key Insights
+
+SUVs and Electric Vehicles (EVs) show the strongest growth in total sales and revenue share.
+
+Sedans maintain consistent sales, while Hatchbacks show a gradual decline in demand.
+
+Premium models have higher margins despite lower sales volume.
+
+Urban regions have the highest sales concentration, especially for EVs and luxury cars.
+
+Festive seasons and year-end periods see sharp spikes in sales due to discounts and promotions.
+
+Customer preference leans towards mid-range models offering both performance and fuel efficiency.
+
+⚙️ Tools & Techniques Used
+
+Power BI – for dashboard design and KPI visualization
+
+Power Query – for data cleaning and transformation
+
+DAX (Data Analysis Expressions) – for custom measures and KPIs
+
+Excel / CSV Data – as the raw data source
+
+(Optional) SQL or Python – for data preprocessing
+
+🧮 Sample DAX Measures
+Total Sales = SUM(CarSales[Revenue])
+
+Total Units Sold = COUNT(CarSales[Car_ID])
+
+Average Selling Price = [Total Sales] / [Total Units Sold]
+
+Profit Margin % = DIVIDE(SUM(CarSales[Profit]), SUM(CarSales[Revenue]), 0) * 100
+
+Top Brand Sales = CALCULATE(SUM(CarSales[Revenue]), ALLEXCEPT(CarSales, CarSales[Brand]))
+
+📈 Dashboard Highlights
+
+Interactive Filters: Brand, Model, Year, and Region
+
+Visualizations: KPI cards, bar and line charts, donut charts, and heatmaps
+
+Trend Analysis: Month-over-month sales growth, profit tracking, and seasonal variations
+
+Regional Breakdown: Sales performance by city, state, and dealership
+
+Segment Comparison: SUV vs Sedan vs Hatchback vs EV
+
+📊 Findings Summary
+Category	Observation	Recommendation
+SUV Segment	Strong upward sales trend	Increase stock and marketing investment
+Electric Vehicles (EVs)	Rapidly growing demand	Focus on EV infrastructure and promotion
+Hatchbacks	Declining interest	Review pricing and reposition in market
+Regional Sales	Metro cities dominate	Expand reach in Tier-2 cities
+Premium Models	High profit, low volume	Target high-income segments with promotions
+🚀 Business Impact
+
+Improved decision-making through data-backed sales insights.
+
+Enhanced inventory planning by forecasting demand by model and region.
+
+Better understanding of consumer preferences and emerging trends.
+
+Optimization of marketing campaigns based on seasonal patterns.
+
+🔮 Future Enhancements
+
+Add predictive forecasting using machine learning to project future sales.
+
+Include customer feedback sentiment for deeper satisfaction analysis.
+
+Connect to live dealership data for real-time sales tracking.
+
+Integrate cost, discount, and financing data for full profit analysis.
